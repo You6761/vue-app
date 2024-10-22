@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col items-center justify-center py-10">
     <!-- Titre principal -->
-    <h1 class="text-3xl font-bold mb-6">Producteur</h1>
+ 
     
     <!-- Navigation des producteurs -->
     <div class="flex items-center mb-6">
