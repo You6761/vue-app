@@ -1,13 +1,12 @@
 <template>
   <div class="flex flex-col items-center justify-center py-10">
-    <!-- Titre principal -->
- 
-    
+   
     <!-- Navigation des producteurs -->
     <div class="flex items-center mb-6">
       <!-- Bouton "Précédent" avec icône -->
       <button @click="previousProducer" class="bg-gray-300 px-4 py-2 rounded-l-lg hover:bg-gray-400 flex items-center">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
         </svg>
         Précédent
@@ -15,9 +14,14 @@
 
       <!-- Image du producteur au centre -->
       <div class="mx-4">
-        <img :src="currentProducerImage" alt="Producteur" class="h-40 w-40 rounded-full border border-gray-400 shadow-lg" />
+        <img  src="/image/tete.jpeg" alt="Producteur" class="h-40 w-40 rounded-full border border-gray-400 shadow-lg" />
       </div>
-
+      <div class="mx-4">
+        <img  src="/image/tetes.jpeg" alt="Producteur" class="h-40 w-40 rounded-full border border-gray-400 shadow-lg" />
+      </div>
+      <div class="mx-4">
+        <img  src="/image/terre.jpeg" alt="Producteur" class="h-40 w-40 rounded-full border border-gray-400 shadow-lg" />
+      </div>
       <!-- Bouton "Suivant" avec icône -->
       <button @click="nextProducer" class="bg-gray-300 px-4 py-2 rounded-r-lg hover:bg-gray-400 flex items-center">
         Suivant
@@ -39,9 +43,9 @@ import { ref, computed } from "vue";
 // Gestion des producteurs
 const currentProducer = ref(0);
 const producers = [
-  { name: "Jean Dupont", image: "https://via.placeholder.com/150" },
-  { name: "Marie Martin", image: "https://via.placeholder.com/150" },
-  { name: "Paul Bernard", image: "https://via.placeholder.com/150" }
+  { name: "Jean Dupont", image: "/tete.jpeg" },
+  { name: "Marie Martin", image: "/tee.jpeg" },
+  { name: "Paul Bernard", image: "/tetes.jpeg" }
 ];
 
 const currentProducerName = computed(() => producers[currentProducer.value].name);
