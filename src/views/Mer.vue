@@ -6,7 +6,7 @@
     </RouterLink>
 
     <!-- Image du producteur -->
-    <div class="image-container text-center mb-6">
+    <div class="image-container text-center mb-6 shadow-xl">
       <img 
         src="https://static.actu.fr/uploads/2023/03/3b1c26b5f5046bf1c26b5f504242c2v-960x640.jpg" 
         alt="Image Producteur Mer" 
@@ -15,9 +15,9 @@
 
     <!-- Liste des producteurs de la Mer -->
     <ul class="producer-list text-center space-y-4">
-      <li class="text-lg font-semibold">Jean Pascal, Producteur de Crevettes</li>
-      <li class="text-lg font-semibold">Jerome Legu, Producteur de Sardines</li>
-      <li class="text-lg font-semibold">Philipe Gros, Producteur de Harengs</li>
+      <li class="text-lg font-semibold">Jean Pascal, Producteur de Crevettes depuis 2009, Alsace</li>
+      <li class="text-lg font-semibold">Jerome Legu, Producteur de Sardines depuis 1990, Picardi</li>
+      <li class="text-lg font-semibold">Philipe Gros, Producteur de Harengs depuis 2020, Moselle</li>
     </ul>
   </div>
 </template>

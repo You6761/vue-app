@@ -11,7 +11,7 @@
 
 
     <!-- Image du producteur -->
-    <div class="image-container text-center mb-6">
+    <div class="image-container text-center mb-6 shadow-xl">
       <img 
         src="https://medias.reussir.fr/action-agricole-picarde/2023-11/GN2OX9OF1_web.jpg" 
         alt="Image Producteur Terre" 
@@ -20,9 +20,9 @@
 
     <!-- Liste des producteurs de la Terre -->
     <ul class="producer-list text-center space-y-4">
-      <li class="text-lg font-semibold">Jean Gerand, Producteur de lait</li>
-      <li class="text-lg font-semibold">Jerome Leroy, Producteur de bocaux de légumes</li>
-      <li class="text-lg font-semibold">Philipe Plein, Producteur de charcuterie</li>
+      <li class="text-lg font-semibold ">Jean Gerand, Producteur de lait depuis 2005, Bretagne</li>
+      <li class="text-lg font-semibold">Jerome Leroy, Producteur de bocaux de légumes depuis 2008, France</li>
+      <li class="text-lg font-semibold">Philipe Plein, Producteur de charcuterie depuis 2004, Corse</li>
     </ul>
   </div>
 </template>
@@ -66,6 +66,7 @@
   max-width: 100%;
   height: auto;
   border-radius: 10px;
+  
 }
 
 .producer-list {
