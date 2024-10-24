@@ -8,6 +8,7 @@ import Connexion from '../views/Connexion.vue';
 import APropo from '../views/APropo.vue';
 import Map from '../views/Map.vue';
 
+
 // Définition des routes de l'application
 const routes = [
   { path: '/', component: HomeView },

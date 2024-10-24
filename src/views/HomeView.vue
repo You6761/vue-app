@@ -10,6 +10,8 @@
   <!-- Lien vers producteurs Terre et Mer -->
   <div class="flex justify-between mb-6 px-4"></div>
 <Caroussel/>
+<Newsletter/>
+
   <footer class="bg-gray-800 text-white py-4 mt-8">
     <nav class="flex justify-between items-center px-4">
      
@@ -19,7 +21,7 @@
 </template>
 <script setup>
 import { ref, computed } from "vue";
-import Connexion from "./Connexion.vue";
+import Newsletter from "./Connexion.vue";
 
 import { RouterLink } from "vue-router";
 import Caroussel from "./Caroussel.vue";

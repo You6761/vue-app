@@ -42,7 +42,7 @@ import { ref } from 'vue'
 
 const currentIndex = ref(0)
 const images = ref([
-  { src: '/image/mer.jpeg', alt: 'Image 1' },
+  { src: '/image/mer.jpeg ', alt: 'Image 1 ', },
   { src: '/image/photo.jpeg', alt: 'Image 2' },
   { src: '/image/im.jpeg', alt: 'Image 3' },
   { src: '/image/bocal.jpeg', alt: 'Image 4' },
@@ -64,3 +64,11 @@ const nextSlide = () => {
   }
 }
 </script>
+<style scoped>
+.w-full{
+  border-radius: 50%;
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+}
+</style>
