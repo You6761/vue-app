@@ -12,6 +12,7 @@
     "autoprefixer": "^10.4.20",
     "pinia": "^2.2.4",
     "postcss": "^8.4.47",
+    "swiper": "^11.1.14",
     "vue": "^3.5.12",
     "vue-router": "^4.4.5",
     "vuetify": "^3.7.3"
