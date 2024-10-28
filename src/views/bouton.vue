@@ -55,18 +55,21 @@ const previousProducer = () => {
 };
 </script>
 
-<style scoped>
-/* Ombre pour les boutons et l'image */
+<style scoped lang="scss">
+$shadow-light: rgba(0, 0, 0, 0.1);
+$shadow-lg: rgba(0, 0, 0, 0.2);
+$border-gray: #6b7280;
+
 .shadow {
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px $shadow-light;
 }
 
 .shadow-lg {
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px $shadow-lg;
 }
 
-/* Ajout de la couleur de bordure pour un meilleur contraste */
 .border-gray-500 {
-  border-color: #6b7280;
+  border-color: $border-gray;
 }
+
 </style>

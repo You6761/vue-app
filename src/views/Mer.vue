@@ -28,28 +28,37 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+// Variables
+$padding-value: 20px;
+$image-border-radius: 10px;
+$producer-list-color: #333;
+
+// Section .mer-section
 .mer-section {
-  padding: 20px;
+  padding: $padding-value;
 }
 
-.image-container img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
-}
+// Image container
+.image-container {
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: $image-border-radius;
 
-.producer-list {
-  margin-top: 20px;
-}
-
-.producer-list li {
-  color: #333;
-}
-
-@media (min-width: 768px) {
-  .image-container img {
-    width: 50%; /* Ajuste l'image à 50% de la largeur de l'écran sur les grands écrans */
+    @media (min-width: 768px) {
+      width: 50%;
+    }
   }
 }
+
+// Liste des producteurs
+.producer-list {
+  margin-top: $padding-value;
+
+  li {
+    color: $producer-list-color;
+  }
+}
+
 </style>

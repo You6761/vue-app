@@ -64,11 +64,13 @@ const nextSlide = () => {
   }
 }
 </script>
-<style scoped>
-.w-full{
+<style scoped lang="scss">
+
+.w-full {
   border-radius: 50%;
   width: 350px;
   height: 350px;
   object-fit: cover;
 }
+
 </style>

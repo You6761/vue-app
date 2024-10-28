@@ -27,59 +27,64 @@
   </div>
 </template>
 
-
-<style scoped>
+<style scoped lang="scss">
+$header-bg-color: #42b983;
+$text-color: #333;
+$link-color: white;
 
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  text-align: center;}
-  header {
-    background-color: #42b983;
-    padding: 10px;
-    color: white;
+  text-align: center;
+}
+
+header {
+  background-color: $header-bg-color;
+  padding: 10px;
+  color: $link-color;
+
+  nav {
+    ul {
+      list-style-type: none;
+      padding: 0;
+
+      li {
+        display: inline;
+        margin: 0 10px;
+      }
+    }
+
+    a {
+      color: $link-color;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
-  
-  header nav ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  header nav ul li {
-    display: inline;
-    margin: 0 10px;
-  }
-  
-  header a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  header a:hover {
-    text-decoration: underline;
-  }
+}
 
 .terre-section {
   padding: 20px;
 }
 
-.image-container img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
-  
+.image-container {
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+
+    @media (min-width: 768px) {
+      width: 50%; 
+    }
+  }
 }
 
 .producer-list {
   margin-top: 20px;
-}
 
-.producer-list li {
-  color: #333;
-}
-
-@media (min-width: 768px) {
-  .image-container img {
-    width: 50%; /* Ajuste l'image à 50% de la largeur de l'écran sur les grands écrans */
+  li {
+    color: $text-color;
   }
 }
 </style>

@@ -16,8 +16,13 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+// Variable pour le padding
+$padding-value: 20px;
+
+// Classe .propo-section
 .propo-section {
-  padding: 20px;
+  padding: $padding-value;
 }
+
 </style>

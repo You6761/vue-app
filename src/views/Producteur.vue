@@ -69,10 +69,14 @@ const toggleDescription = () => {
 };
 </script>
 
-<style scoped>
-/* Ajout d'une ombre à l'image */
+<style scoped lang="scss">
+
+$shadow-color: rgba(0, 0, 0, 0.1);
+$shadow-color-light: rgba(0, 0, 0, 0.05);
+
 .shadow-lg {
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 10px 15px -3px $shadow-color, 0 4px 6px -2px $shadow-color-light;
 }
+
 </style>
 
